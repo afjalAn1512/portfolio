@@ -38,19 +38,3 @@ function toggleTheme() {
         localStorage.theme = 'light';
     }
 }
-
-function sendEmail() {
-
-    Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "alfazak150@gmail.com",
-        Password: "BBDCFA1647C85BCD9A82E603C135E76FF0F4",
-        To: 'alfazak150@gmail.com',
-        From: "workingdeveloperafjal@gmail.com",
-        Subject: "Contact Android Developer Afjal",
-        Body: "And this is the body"
-    }).then(
-        message => alert(message)
-    );
-
-}
